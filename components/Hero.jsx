@@ -18,9 +18,9 @@ const Hero = ()=>{
                   Not all websites are the same! , some are made such that target the user psychology and end up making your customers 😊, thats where I master!
                 </div>
                 <div className="mt-10 flex xl:justify-start justify-center animate__fadeInDown animate__animated">
-                    <button className="rounded-md px-4 py-2 bg-primary text-white"> 
+                    <a className="rounded-md px-4 py-2 bg-primary text-white"  href="#contact"> 
                         Contact Me Now
-                    </button>
+                    </a>
                 </div>
          </div>
 
