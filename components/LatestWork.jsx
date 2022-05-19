@@ -14,8 +14,11 @@ const LatestWork = () => {
 
                         <Fade left>
                             <Tilt>
+                                <a href="https://glistening-dasik-8e85c0.netlify.app/">
+                                <img  className="h-full rounded-md hover:shadow-lg hover:shadow-black transition-all duration-300 cursor-pointer" src="https://i.ibb.co/0p7RvYC/bmandar.png" alt="bmandar" border="0" />
+
+                                </a>
                              
-                                    <img  className="h-full rounded-md hover:shadow-lg hover:shadow-black transition-all duration-300 cursor-pointer" src="https://i.ibb.co/0p7RvYC/bmandar.png" alt="bmandar" border="0" />
                             </Tilt>
 
                         </Fade>
