@@ -9,7 +9,7 @@ const LatestWork = () => {
                 <div className="text-3xl sm:text-5xl text-center font-righteous">
                     Latest Work
                 </div>
-                <div className="mt-8 grid grid-cols-1   lg:grid-cols-2 gap-y-4">
+                <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-y-4">
                     <div className="p-8 order-1">
 
                         <Fade left>
