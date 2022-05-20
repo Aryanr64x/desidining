@@ -20,7 +20,7 @@ const Contact = () => {
         if (name.length != 0 && email.length != 0 && message.length != 0 && restname.length != 0) {
             setLoading(true);
             const doc = {
-                _type: 'request',
+                _type: 'contact',
                 name,
                 email,
                 message,
