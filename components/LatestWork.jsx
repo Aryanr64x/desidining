@@ -43,7 +43,7 @@ const LatestWork = () => {
 
                         <Fade left>
                             <div className="text-center underline text-2xl cursor-pointer">
-                                <a href="https://glistening-dasik-8e85c0.netlify.app/"> indiangrillroom.com </a>
+                                <a href="https://verdant-haupia-6d06b9.netlify.app"> indiangrillroom.com </a>
                             </div>
                             <div className="text-md xl:text-lg  p-4 xl:p-8 text-center lg:text-left">
                                  This is a concept website for a north indian restaurant named IndianGrillRoom at the heart of 
@@ -57,7 +57,7 @@ const LatestWork = () => {
 
                         <Fade right>
                             <Tilt>
-                                <a href="https://glistening-dasik-8e85c0.netlify.app/">
+                                <a href="https://verdant-haupia-6d06b9.netlify.app">
                                     <img className="h-full rounded-md hover:shadow-lg hover:shadow-black transition-all duration-300 cursor-pointer" src="https://i.postimg.cc/65DfBtsF/irgrill.png" alt="bmandar" border="0" />
 
                                 </a>
