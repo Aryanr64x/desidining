@@ -29,11 +29,12 @@ const Contact = () => {
             }
             client.create(doc).then((res) => {
                 setLoading(false);
-                setDialog(true);
                 setEmail('');
                 setRestName('');
                 setName('');
                 setMessage('');
+                setDialog(true);
+               
             }).catch((e) => {
 
             });
@@ -44,81 +45,68 @@ const Contact = () => {
 
     return (
 
-        <section className="mt-44">
-            <div className="text-center text-3xl sm:text-5xl font-righteous" id="contact">
-                Wanna connect with me ?
+        <div className="container section">
+            <div className="text-center title display-4">
+                Wanna Connect With Me ?
             </div>
-            <div className="flex mt-8 px-4 sm:px-20 xl:px-36 lg:flex-row flex-col" >
-                <div className="basis-1/3">
-                    <input className="w-full p-2 rounded text-black placeholder-black" type="text" placeholder="Enter your name ..." value={name} onChange={(e) => {
-                        setName(e.target.value);
+            <div className="row ">
+                <div className="col-lg-4">
+                    <input type="text" className="form-control mt-4" placeholder="Enter your name.." onChange={(e)=>{
+                        setName(e.target.value)
                     }} />
                 </div>
-                <div className="w-40  h-8 lg:h-0">
-
-                </div>
-                <div className="basis-1/3">
-                    <input className="w-full p-2 rounded text-black placeholder-black" type="text" placeholder="Enter your Restaurant Name ..." value={restname} onChange={(e) => {
-                        setRestName(e.target.value);
+                <div className="col-lg-4">
+                    <input type="text" className="form-control mt-4" placeholder="Enter the name of your restaurant..." onChange={(e)=>{
+                        setRestName(e.target.value)
                     }} />
 
                 </div>
-                <div className="w-40  h-8 lg:h-0">
-
-                </div>
-                <div className="basis-1/3">
-                    <input className="w-full p-2 rounded text-black placeholder-black" type="text" placeholder="Enter your email ..." value={email} onChange={(e) => {
-                        setEmail(e.target.value);
+                <div className="col-lg-4">
+                    <input type="text" className="form-control mt-4" placeholder="Enter your email..." onChange={(e)=>{
+                        setEmail(e.target.value)
                     }} />
 
                 </div>
             </div>
-            <div className="px-4 sm:px-20 xl:px-36 mt-8">
-                <textarea className="w-full p-2 rounded text-black placeholder-black" type="text" placeholder="Enter your message ..." value={message} onChange={(e) => {
-                    setMessage(e.target.value);
-                }} />
-                <div className="flex justify-center lg:justify-end">
-                    {
-                        (loading) ? (<CircularProgress color="inherit" className="mt-8" />) : (<button className="bg-secondary text-primary px-4 py-2 rounded-md mt-4 font-semibold" onClick={submitMessage}> SUBMIT MESSAGE </button>
-                        )
-                    }                </div>
-
+            <div className="mt-4">
+                <textarea type="text" placeholder="Enter your Message" className="form-control" onChange={(e)=>{
+                    setMessage(e.target.value)
+                }}></textarea>
             </div>
-
-
-            <div className="text-center mt-8 text-2xl title">
+            <div className="d-flex justify-content-lg-end justify-content-center mt-3">
+              {
+                   (loading) ? (<CircularProgress />) : ( <button className="btn  btn-outline-primary" onClick={submitMessage}> SUBMIT MESSAGE </button>)
+              }
+            </div>
+            <div className="mt-5 title display-6 text-center">
                 OR
             </div>
-            <div className="mt-4 text-center text-3xl underline cursor-pointer">
-                <a href="tel:+916290341107">
-                    Call/Whatsapp Now <strong>
-                        +91 6290341107
-                    </strong>
-                </a>
+            <div className="mt-5 display-6 text-center">
+                Call Or Whatsapp Now @ <a href="#"> +91 6290341107 </a>
             </div>
-
-
+            
             <Dialog
                 open={dialog}
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
 
             >
-                <DialogTitle id="alert-dialog-title" className="bg-secondary font-bold">
+                <DialogTitle id="alert-dialog-title" className="bg-dark text-primary fw-bold">
                     Thanks for contacting !
                 </DialogTitle>
-                <DialogContent className="bg-secondary font-bold">
-                    <DialogContentText id="alert-dialog-description" className=" font-bold">
+                <DialogContent className="bg-dark font-bold ">
+                    <DialogContentText id="alert-dialog-description " className="text-primary font-bold">
                         I will reach you out soon on the email you provided, I will try my best to help
                         you 😊😊
                     </DialogContentText>
                 </DialogContent>
-                <DialogActions className="bg-white text-white">
-                    <button className="bg-secondary text-primary px-4 py-2 rounded-md mt-4 font-semibold" onClick={() => { setDialog(false) }}> NOICE !! </button>
+                <DialogActions className="bg-dark text-primary">
+                    <button className=" text-primary px-4 py-2 rounded-md mt-4 font-semibold" onClick={() => { setDialog(false) }}> NOICE !! </button>
                 </DialogActions>
             </Dialog>
+        </div>
 
-        </section>
+
     );
 }
 

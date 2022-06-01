@@ -4,71 +4,69 @@ import Fade from 'react-reveal/Fade'
 
 const LatestWork = () => {
     return (
-        <div>
-            <section className="mt-48 px-4 sm:px-20 xl:px-36">
-                <div className="text-3xl sm:text-5xl text-center font-righteous">
-                    Latest Works
-                </div>
-                <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-y-4">
-                    <div className="p-8 order-1">
+        <div className="section container">
+            <div className="text-center title display-3">
+                Latest Works
+            </div>
+            <div>
+                <div className="row mt-5">
+                    <div className="col-lg-6 p-lg-5">
+                        <a href="https://glistening-dasik-8e85c0.netlify.app/">
+                            <Fade left>
+                                <Tilt>
+                                    <img className="img-fluid rounded-3" src="https://i.ibb.co/0p7RvYC/bmandar.png" alt="bmandar"
+                                        border="0" />
+                                </Tilt>
+                            </Fade>
 
-                        <Fade left>
-                            <Tilt>
-                                <a href="https://glistening-dasik-8e85c0.netlify.app/">
-                                    <img className="h-full rounded-md hover:shadow-lg hover:shadow-black transition-all duration-300 cursor-pointer" src="https://i.ibb.co/0p7RvYC/bmandar.png" alt="bmandar" border="0" />
-
-                                </a>
-
-                            </Tilt>
-
-                        </Fade>
+                        </a>
                     </div>
-                    <div className="flex flex-col justify-center order-2">
-
-                        <Fade right>
-                            <div className="text-center underline text-2xl cursor-pointer">
+                    <div className="col-lg-6 p-lg-5 mt-2 mt-lg-0 d-flex justify-content-center flex-column">
+                        <div className="text-center h3">
+                            <Fade right>
                                 <a href="https://glistening-dasik-8e85c0.netlify.app/"> bangloremandarin.com </a>
-                            </div>
-                            <div className="text-md xl:text-lg  p-4 xl:p-8 text-center lg:text-left">
-                                This is a concept  website recently built for  a chinese restaurant at the heart of city
-                                of Bengaluru . The website&aposs intent is to help increase  the restaurant&aposs sales by its conversion centric design
-                            </div>
-                        </Fade>
-
+                            </Fade>
+                        </div>
+                        <div className="text-center   mt-2 h6 ">
+                            <Fade right>
+                                This is a concept website recently built for a chinese restaurant at the heart of city
+                                of Bengaluru . The website&aposs intent is to help increase the restaurant&aposs sales by its
+                                conversion centric design
+                            </Fade>
+                        </div>
                     </div>
-                    <div className="order-3 h-20 lg:hidden">
-
-                    </div>
-                    <div className="flex flex-col justify-center order-4 lg:order-3">
-
-                        <Fade left>
-                            <div className="text-center underline text-2xl cursor-pointer">
+                </div>
+                <div className="row mt-5">
+                    <div
+                        className="col-lg-6  order-lg-1  order-2 p-lg-5  mt-2 mt-lg-0 d-flex justify-content-center flex-column">
+                        <div className="text-center h3">
+                            <Fade left>
                                 <a href="https://verdant-haupia-6d06b9.netlify.app"> indiangrillroom.com </a>
-                            </div>
-                            <div className="text-md xl:text-lg  p-4 xl:p-8 text-center lg:text-left">
-                                 This is a concept website for a north indian restaurant named IndianGrillRoom at the heart of 
-                                 Gurugram India.  The website follows all the latest best practices that make it conversion 
-                                 centric
-                            </div>
-                        </Fade>
-
+                            </Fade>
+                        </div>
+                        <div className="text-center   mt-2 h6 ">
+                            <Fade left>
+                                This is a concept website for a north indian restaurant named IndianGrillRoom at the heart of
+                                Gurugram India. The website follows all the latest best practices that make it conversion
+                                centric
+                            </Fade>
+                        </div>
                     </div>
-                    <div className="p-8 order-5 lg:order-4">
-
-                        <Fade right>
+                    <div className="col-lg-6 order-lg-2 order-1 p-lg-5">
+                        <a href="https://verdant-haupia-6d06b9.netlify.app">
                             <Tilt>
-                                <a href="https://verdant-haupia-6d06b9.netlify.app">
-                                    <img className="h-full rounded-md hover:shadow-lg hover:shadow-black transition-all duration-300 cursor-pointer" src="https://i.postimg.cc/65DfBtsF/irgrill.png" alt="bmandar" border="0" />
-
-                                </a>
-
+                                <Fade right>
+                                    <img className="img-fluid rounded-3" src="https://i.postimg.cc/65DfBtsF/irgrill.png" alt="bmandar"
+                                        border="0" />
+                                </Fade>
                             </Tilt>
 
-                        </Fade>
+                        </a>
                     </div>
 
                 </div>
-            </section>
+
+            </div>
         </div>
     );
 };
