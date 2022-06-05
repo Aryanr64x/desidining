@@ -1,7 +1,7 @@
 import Tilt from 'react-parallax-tilt';
 import Fade from 'react-reveal/Fade'
 
-
+// import { Fade } from "react-awesome-reveal";
 
 const LatestWork = () => {
     return (
