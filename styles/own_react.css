@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
+body{
+    background-color: black;
+}
 .title {
     font-family: 'Righteous', 'cursive';
 }
@@ -22,8 +24,44 @@
     margin-top: 200px;
 }
 
+.section_posts{
+    margin-top: 100px;
+}
+
+
+
 .hamburger {
     height: 24px;     
     fill: #FFA132;
 
+}
+
+
+
+/* Post car styles */
+.post_card{
+   
+    transition: all;
+    transition-duration: 500ms;
+    border-radius: 20px;
+
+
+}
+
+
+.blog_content {
+    line-height: 40px;
+}
+
+a{
+    text-decoration: none !important;
+    transition: all !important;
+    transition-duration: 500ms !important;
+}
+
+
+
+.author_image{
+    height: 60px;
+    width: 60px;
 }

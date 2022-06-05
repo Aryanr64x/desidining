@@ -1,5 +1,6 @@
 import Tilt from 'react-parallax-tilt';
 import "animate.css/animate.min.css";
+import Link from 'next/link';
 
 
 const Hero = () => {
@@ -22,7 +23,7 @@ const Hero = () => {
                     <div className="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul className="navbar-nav  ms-auto">
                             <li className="nav-item">
-                                <a href="#" className="nav-link active"> Blog </a>
+                                <Link href="/blog" className="nav-link active"> Blog </Link>
                             </li>
 
 
@@ -49,7 +50,7 @@ const Hero = () => {
                             </div>
 
                             <div className="d-flex justify-content-lg-start justify-content-center animate__fadeInDown animate__animated">
-                                <button className="btn btn-primary btn-lg mt-4"> Contact Now </button>
+                                <a className="btn btn-primary btn-lg mt-4" href="#contact" > Contact Now </a>
                             </div>
 
 
