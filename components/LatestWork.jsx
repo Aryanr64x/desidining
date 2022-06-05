@@ -1,5 +1,5 @@
 import Tilt from 'react-parallax-tilt';
-import Fade from 'react-reveal/Fade'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
