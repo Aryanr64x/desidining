@@ -5,7 +5,7 @@ import PostCard from '../../components/blog/PostCard';
 
 export default function BlogHome(props) {
     return (
-        <div className="text-primary ">
+        <div className="text-primary bg-black">
             <div className="section_posts">
                 <div className="container">
                     <div className="display-3 title text-center">
@@ -17,8 +17,11 @@ export default function BlogHome(props) {
                 </div>
             </div>
             <div className="section_posts">
+
+
+                
                 {
-                    (props.posts.length == 1) ? (<div className="h5 container text-center"> Sorry , No Posts To Show For Now ... </div>) : (<div> {
+                    (props.posts.length === 1) ? (<div className="h5 container text-center"> Sorry , No Posts To Show For Now ... </div>) : (<div> {
                         props.posts.map((post) => {
                             return (<PostCard post={post} key={post.slug.current} onHome={true} />)
                         })
